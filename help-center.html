@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Help Center - NeoAcademia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Help Center for NeoAcademia - Get Assistance, Support, and Resources for Our Learning Platform">
+    <meta name="keywords" content="NeoAcademia, Help Center, customer support, troubleshooting, FAQs, learning platform">
+    <meta name="author" content="NeoAcademia">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <style>
+        .help-section {
+            margin-top: 50px;
+        }
+
+        .help-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .help-section p, .help-section ul {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .help-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .help-section li {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+        }
+
+        .help-section li:hover {
+            background-color: #e8f4fd;
+            border-left-color: #2980b9;
+        }
+
+        .help-section a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .help-section a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            font-size: 1.2em;
+            color: #3498db;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            display: none;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact-support {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        .contact-support h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .contact-support p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">NeoAcademia</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="#top" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#team" class="smoothScroll">Community Mentors</a></li>
+                    <li><a href="#courses" class="smoothScroll">Courses</a></li>
+                    <li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    <li><a href="terms.html" class="smoothScroll">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- HELP CENTER -->
+    <section id="help" class="help-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Welcome to the NeoAcademia Help Center</h2>
+                        <p>We’re here to help you make the most of your learning experience. Whether you’re troubleshooting an issue, looking for guidance, or need to contact our support team, you’ll find everything you need right here.</p>
+                    </div>
+
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><strong>Account Management:</strong> Learn how to update your profile, change your password, and manage your notifications.</li>
+                        <li><strong>Technical Support:</strong> Find solutions for common technical issues such as login problems, course access difficulties, and browser compatibility.</li>
+                        <li><strong>Course Enrollments:</strong> Guidance on how to enroll, access course materials, track your progress, and download certificates.</li>
+                        <li><strong>Payment and Refunds:</strong> Information on making payments, understanding billing, and processing refunds.</li>
+                        <li><strong>Community and Forums:</strong> Connect with other learners, ask questions, and share knowledge in our community forums.</li>
+                    </ul>
+
+                    <div class="faq-section">
+                        <h3>Frequently Asked Questions (FAQs)</h3>
+                        <div class="faq-item">
+                            <h4 onclick="toggleFAQ(this)">How do I reset my password?</h4>
+                            <p>To reset your password, go to the login page and click on "Forgot Password." Enter your email address, and we’ll send you a link to reset your password.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4 onclick="toggleFAQ(this)">How can I access my course materials?</h4>
+                            <p>Once enrolled, you can access your course materials by logging into your account and navigating to the "My Courses" section. All materials will be available there.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4 onclick="toggleFAQ(this)">What payment methods do you accept?</h4>
+                            <p>We accept all major credit cards, PayPal, and bank transfers. For more details, visit our <a href="payment-info.html">Payment Information</a> page.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4 onclick="toggleFAQ(this)">Can I get a refund if I’m not satisfied?</h4>
+                            <p>Yes, we offer a 30-day money-back guarantee. If you’re not satisfied with your course, contact our support team within 30 days of purchase for a full refund.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-support">
+                        <h3>Need More Help?</h3>
+                        <p>If you can’t find the answer you’re looking for, our support team is here to help. Reach out to us via email at <a href="mailto:info@neoacademia.com">info@neoacademia.com</a> or call us at <strong>+33 9 85 40 97 13</strong>. We’re available Monday to Friday, 9 AM to 6 PM GMT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Headquarter</h2>
+                        </div>
+                        <address>
+                            <p>1234 Learning St.<br>London, UK, EC1A 1AA</p>
+                        </address>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square" aria-hidden="true"></a></li>
+                            <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="#" class="fa fa-instagram" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Contact Info</h2>
+                        </div>
+                        <address>
+                            <p>+33 9 85 40 97 13</p>
+                            <p><a href="mailto:info@neoacademia.com">info@neoacademia.com</a></p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-info newsletter-form">
+                        <div class="section-title">
+                            <h2>Newsletter Signup</h2>
+                        </div>
+                        <form action="#" method="get">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                                <input type="submit" class="form-control" name="submit" id="form-submit" value="Subscribe">
+                            </div>
+                        </form>
+                        <span><sup>*</sup> We respect your privacy. Unsubscribe at any time.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
