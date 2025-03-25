@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Payment Proof - AC-CORPORATIONS</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/templatemo-style.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .confirmation-container {
+      margin-top: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .confirmation-left {
+  flex: 1;
+  min-width: 300px;
+  min-height: 400px; /* <== This ensures it shows */
+  background: url('images/payment-preview.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+    .confirmation-right {
+      flex: 1;
+      min-width: 300px;
+      padding: 40px;
+    }
+    .confirmation-right h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .form-control {
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background-color: #0056d2;
+      border-color: #0056d2;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">AC-CORPORATIONS</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Back to Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN SECTION -->
+  <section class="container confirmation-container">
+    <div class="confirmation-left"></div>
+    <div class="confirmation-right">
+      <h2>Confirm Your Purchase</h2>
+      <p class="mb-4">Upload your proof of payment and contact details. You'll receive the course by email. For premium programs, our team will reach out directly.</p>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" class="form-control" name="payment-proof" required>
+        <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+        <input type="tel" class="form-control" name="phone" placeholder="Your phone number" required>
+        <select class="form-control" name="course" required>
+          <option value="">-- Select Course --</option>
+          <option>HTML & CSS for Absolute Beginners - USD 50</option>
+          <option>JavaScript Essentials - USD 100</option>
+          <option>React Native App - USD 200</option>
+          <option>Digital Marketing & SEO - USD 300</option>
+          <option>Freelancing for Creators - USD 400</option>
+          <option>Full-Stack Signature Program - USD 500</option>
+          <option>Tech Career Accelerator - USD 1000</option>
+          <option>Masterclass Incubator - USD 1500</option>
+        </select>
+        <button type="submit" class="btn btn-primary btn-block">Submit & Confirm</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="footer-info">
+            <div class="section-title">
+              <h2>Headquarter</h2>
+            </div>
+            <address>
+              <p>71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ</p>
+            </address>
+            <ul class="social-icon">
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+            <div class="copyright-text">
+              <p>&copy; 2025 AC-CORPORATIONS. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="footer-info">
+            <div class="section-title">
+              <h2>Contact Info</h2>
+            </div>
+            <address>
+              <p>+33 9 85 40 97 13</p>
+              <p><a href="mailto:contact@ac-corporations.com">contact@ac-corporations.com</a></p>
+            </address>
+            <div class="footer_menu">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="footer-info newsletter-form">
+            <div class="section-title">
+              <h2>Newsletter Signup</h2>
+            </div>
+            <form action="#" method="get">
+              <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+              <input type="submit" class="form-control" value="Subscribe">
+            </form>
+            <span><sup>*</sup> We respect your privacy.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
