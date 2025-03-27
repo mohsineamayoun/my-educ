@@ -82,7 +82,9 @@
     <div id="paypal-button-container" style="margin-top: 30px;"></div>
   </div>
 
-  <script src="https://www.paypal.com/sdk/js?client-id=AZ6x51ghwUrRXhdP99y7quI94vIofzzK4_fg0VoRuazUJeVFX5k-9CKHx3ZnTB-fNPu_2luJBtSY6xaI&components=buttons&enable-funding=card"></script>
+  <!-- ✅ Updated PayPal SDK to specify EUR -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AZ6x51ghwUrRXhdP99y7quI94vIofzzK4_fg0VoRuazUJeVFX5k-9CKHx3ZnTB-fNPu_2luJBtSY6xaI&components=buttons&enable-funding=card&currency=EUR"></script>
+  
   <script>
     function renderButton() {
       const amount = document.getElementById('amount').value;
@@ -104,7 +106,8 @@
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: amount
+                value: amount,
+                currency_code: 'EUR' // ✅ Force EUR here
               },
               description: 'Paiement AC-Corporations'
             }]
